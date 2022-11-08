@@ -4,12 +4,87 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
+    <title>Prime Movies</title>
 </head>
 
 <body>
-    <h1>Project Starter</h1>
+    <div class="overlay disabled"></div>
+    <header>
+        <i class="fa-solid fa-bars"></i>
+        <a href=""><img src="/images/logo.png" id='logo' alt="logo"
+                style="max-width: 60px; max-height: 50px;margin:auto"></a>
+        <form id="form">
+            <input type="text" id="search" placeholder="Search" class="search">
+
+
+        </form>
+        <div class="headerBtnCon">
+            <div class="header-buttons home">Home</div>
+            <div class="header-buttons genre">Genres</div>
+            <div class="gnr-modal2 disabled"></div>
+            <div class="header-buttons">Added</div>
+        </div>
+        <i class="fa-solid fa-circle-user"></i>
+
+
+
+
+    </header>
+    <div class="modal disabled">
+        <div class="modal-buttons home"> <a href="index.html">Home</a></div>
+        <div class="modal-buttons gnrBtn genre">Genres</div>
+        <div class="modal-buttons upcoming">Upcoming</div>
+        <div class="modal-buttons">Added</div>
+        <div class="modal-buttons">Types</div>
+
+    </div>
+    <div class="gnr-modal disabled"></div>
+
+
+
+    <div class="top">
+        <div class="title-container">
+            <div class="title" #id="title1">Prime</div>
+            <a href=""><img src="/images/logo.png" id='logo' alt="logo"></a>
+            <div class="title" #id="title1">Movies</div>
+        </div>
+
+
+        <div class="buttons-container">
+            <div class="buttons" id="b1">Top Rated</div>
+            <div class="buttons" id="b2">Popular</div>
+            <div class="buttons" id="b3">Upcoming</div>
+        </div>
+    </div>
+    <div class="logInMdl disabled" id="a">
+        <div class="welcome-container">
+            <label id="welcome">Welcome Back</label><i class="fa-solid fa-square-xmark"></i>
+        </div>
+
+        <p>Sign in to continue</p>
+        <div class="signIn">
+            <form action="">
+                <label for="">Your Account</label>
+                <input type="text" placeholder="Your username or email" id="username"><br>
+                <label for="">Password</label>
+                <input type="password" placeholder="password" id="password">
+            </form>
+            <div class="forgot">Forgot your password?</div>
+            GOOGLE CAPTCHA <br>
+            <button class="login">Login</button>
+            <p id="errorTxt"></p>
+            <label id="reg">Don't have an account?<span class="register"> Register</span></label>
+        </div>
+    </div>
+    <main id="main">
+
+    </main>
+    <div class="copyright">
+        Copyright@ 2022 LAV3LL All rights reserved
+    </div>
     <script src="script.js"></script>
 </body>
 
